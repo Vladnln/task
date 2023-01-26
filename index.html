@@ -8,60 +8,62 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div div class="navbar">
-			<img src="./img/Logo.png" alt="Logo" />
-			<div class="navbar__links">
-				<a href="#">Menu</a>
-				<a href="#">Recipes</a>
-				<a href="#">Chefs</a>
-				<a href="#">Contacts</a>
+		<header class="header">
+			<div class="container">
+				<img class="logo" src="./img/Logo.png" alt="" >
+				
+				<nav>
+					<a class="nav__link nav__link_active" href="#">Menu</a>
+					<a class="nav__link" href="#">Recipes</a>
+					<a class="nav__link" href="#">Chefs</a>
+					<a class="nav__link" href="#">Contacts</a>
+				</nav>
 			</div>
-		</div>
-
+		</header>	
 		<div class="container">
-			<h1 class="main__title">
-				Your <span>Favourite Food</span> Delivered
-				<span>Hot & Fresh</span>
-			</h1>
-			<div class="main__subtitle">
-				HEALTY SWITCHER chefs do all prep work, like peeling, chopping & marinating, so you can cook a fresh
-				homemade dinner in just 15 minutes.
+			<div class="main">
+				<h1 class="main__title">
+					Your <span>Favourite Food</span> Delivered
+					<span>Hot & Fresh</span>
+				</h1>
+				<p class="main__subtitle">
+					HEALTY SWITCHER chefs do all prep work, like peeling, chopping & marinating, so you can cook a fresh
+					homemade dinner in just 15 minutes.
+				</p>
+				<button class="main__button">Order Now</button>
+				<div class="contacts">
+					<div class="contacts__wrapper">
+						<img src="./icons/ic_watch_later.png" alt="" />
+						<p class="contacts__title">Today 10:00 am - 7:00 pm</p>
+						<p class="contacts__subtitle">Working hours</p>
+					</div>
+					<div class="contacts__wrapper">
+						<img src="./icons/ic_near_me.png" alt="" />
+						<p class="contacts__title">Velyka Vasylkivska 100</p>
+						<p class="contacts__subtitle">Get Directions</p>
+					</div>
+					<div class="contacts__wrapper">
+						<img src="./icons/ic_call.png" alt="" />
+						<p class="contacts__title">+38 (063)833 24 15</p>
+						<p class="contacts__subtitle">Call Online</p>
+					</div>
+				</div>
 			</div>
-
-			<div class="main__order-button">Order Now</div>
-
-			<div class="location">
-				<div class="location__wrapper">
-					<img src="./icons/ic_watch_later.png" alt="" />
-					<p>Today 10:00 am - 7:00 pm</p>
-					<p class="slogan">Working hours</p>
+			<div class="about">
+				<div class="about__title title">
+					<p class="title__name">The Basics Of Healthy Food</p>
+					<p class="title__background">ABOUT</p>
 				</div>
-				<div class="location__wrapper">
-					<img src="./icons/ic_near_me.png" alt="" />
-					<p>Velyka Vasylkivska 100</p>
-					<p class="slogan">Get Directions</p>
-				</div>
-				<div class="location__wrapper">
-					<img src="./icons/ic_call.png" alt="" />
-					<p>+38 (063)833 24 15</p>
-					<p class="slogan">Call Online</p>
-				</div>
-			</div>
-
-			<div class="about__us">
-				<div class="about__us__pointing-title">
-					The Basics Of Healthy Food
-					<p class="background-text">ABOUT</p>
-				</div>
-				<h2 class="about__us-description">
-						In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur
-						voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.
-					</h2>
-					<div class="slider">
-						<img src="./icons/1. White.png" alt="" class="slider__button">
+				<h2 class="about__description">
+					In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur
+					voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.
+				</h2>
+				<div class="slider">
+					<img src="./icons/1. White.png" alt="" class="slider__button">
 						<div class="slider__wrapper">							
 							<div class="slider__content">															
-							  <img src="./img/food1.png" alt="">																					
+							  <img src="./img/food1.png" alt="">
+							  <img src="./img/food2.png" alt="">																					
 							</div>														
 						</div>
 						<img src="./icons/1. White-1.png" alt="" class="slider__button">
@@ -70,1050 +72,383 @@
 			</div>
 
 			<div class="events">
-				<div class="events__header">
-					<div class="pointing__title">
-						How It Works
-						<p class="background-text">WORK</p>
-					</div>
+				<div class="title title_border">
+					<p class="title__name">How It Works</p>
+					<p class="title__background">WORK</p>
 				</div>
-				<div class="event__cards">
-					<div class="events__card">
-						<div class="events__card-wrapper">
-							<div class="events__card-header">Pick Meals</div>
-							<div class="events__card-description">
+				<div class="events-list">
+					<div class="events-list__wrapper">
+							<p class="events-list__title">Pick Meals</p>
+							<p class="events-list__description">
 								Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie options.
-							</div>
-						</div>
+							</p>
 					</div>
-					<div class="events__card">
-						<div class="events__card-wrapper">
-							<div class="events__card-header">Choose how often</div>
-							<div class="events__card-description">
-								Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!
-							</div>
-						</div>
+					<div class="events-list__wrapper">
+						<p class="events-list__title">Choose How Often</p>
+						<p class="events-list__description">
+							Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!
+						</p>
 					</div>
-					<div class="events__card">
-						<div class="events__card-wrapper">
-							<div class="events__card-header">Fast Deliveries</div>
-							<div class="events__card-description">
-								Your freshly prepped 15-min dinner kits arrive on your doorstep in a refrigerated box.
-							</div>
-						</div>
+					<div class="events-list__wrapper">
+						<p class="events-list__title">Fast Deliveries</p>
+						<p class="events-list__description">
+							Your freshly prepped 15-min dinner kits arrive on your doorstep in a refrigerated box.
+						</p>
 					</div>
-					<div class="events__card">
-						<div class="events__card-wrapper">
-							<div class="events__card-header">Tasty Meals</div>
-							<div class="events__card-description">
-								Gobble makes cooking fast, so you have more time to unwind and be with family.
-							</div>
-						</div>
+					<div class="events-list__wrapper">
+						<p class="events-list__title">Tasty Meals</p>
+						<p class="events-list__description">
+							Gobble makes cooking fast, so you have more time to unwind and be with family.
+						</p>
 					</div>
 				</div>
 			</div>
 			<div class="dishes">
-				<div class="dishes__header">
-					<div class="pointing__title">
-						Dish Of The Day
-						<p class="background-text">DISHES</p>
-					</div>
+				<div class="title title_border">
+					<p class="title__name">Dish Of The Day</p>
+					<p class="title__background">DISHES</p>
 				</div>
-
 				<div class="dishes__list">
-					<div class="dishes__list-card">
-						<div class="dishes__picture">
-							<img src="./img/dish1.png" alt="" />
-							<img src="./icons/shr.png" alt="" class="dishes__share-button" />
+					<div class="dishes__list-item">
+						<img class="dishes__img" src="./img/dish1.png" alt="">
+						<img class="dishes__share-button" src="./icons/shr.png" alt="">
+						<div class="dishes__text">
+							<p class="dishes__title">Featured Meal</p>
+							<p class="dishes__subtitle">Served with french fries + drink</p>
+							<p class="dishes__description">
+								Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...
+							</p>
 						</div>
-						<div class="dishes__list-title">
-							Featured Meal
-							<div class="dishes__list-signature">Served with french fries + drink</div>
-							<div class="dishes__list-description">
-								Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and
-								more...
+						<div class="dishes__buttons">
+							<div class="dishes__stars">
+								<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0_4_217)">
+									<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+									</g>
+									</svg>
+									<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+										</mask>
+										<g mask="url(#mask0_4_217)">
+										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+										</g>
+										</svg>
+										<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0_4_217)">
+											<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+											</g>
+											</svg>
+											<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+												</mask>
+												<g mask="url(#mask0_4_217)">
+												<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+												</g>
+												</svg>	
+												<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+													</mask>
+													<g mask="url(#mask0_4_217)">
+													<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+													</g>
+													</svg>								
 							</div>
-						</div>
-						<div class="dishes__raiting">
-							<div class="dishes__raiting-stars" data-total="0">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="5"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="4"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="3"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="2"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="1"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-							</div>
-							<div class="dishes__raiting-counter">12</div>
-							<button class="dishes__order-btn">ORDER</button>
+							<div class="dishes__raiting-number">12</div>
+							<button class="dishes__order-button">ORDER</button>
 						</div>
 					</div>
-					<div class="dishes__list-card">
-						<div class="dishes__picture">
-							<img src="./img/dish3.png" alt="" />
-							<img src="./icons/shr.png" alt="" class="dishes__share-button" />
+					<div class="dishes__list-item">
+						<img class="dishes__img" src="./img/dish6.png" alt="">
+						<img class="dishes__share-button" src="./icons/shr.png" alt="">
+						<div class="dishes__text">
+							<p class="dishes__title">Featured Meal</p>
+							<p class="dishes__subtitle">Served with french fries + drink</p>
+							<p class="dishes__description">
+								Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...
+							</p>
 						</div>
-						<div class="dishes__list-title">
-							Featured Meal
-							<div class="dishes__list-signature">Served with french fries + drink</div>
-							<div class="dishes__list-description">
-								Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and
-								more...
+						<div class="dishes__buttons">
+							<div class="dishes__stars">
+								<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0_4_217)">
+									<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+									</g>
+									</svg>
+									<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+										</mask>
+										<g mask="url(#mask0_4_217)">
+										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+										</g>
+										</svg>
+										<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0_4_217)">
+											<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+											</g>
+											</svg>
+											<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+												</mask>
+												<g mask="url(#mask0_4_217)">
+												<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+												</g>
+												</svg>	
+												<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+													</mask>
+													<g mask="url(#mask0_4_217)">
+													<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+													</g>
+													</svg>								
 							</div>
-						</div>
-						<div class="dishes__raiting">
-							<div class="dishes__raiting-stars" data-total="0">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="5"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="4"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="3"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="2"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="1"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-							</div>
-							<div class="dishes__raiting-counter">12</div>
-							<button class="dishes__order-btn">ORDER</button>
+							<div class="dishes__raiting-number">12</div>
+							<button class="dishes__order-button">ORDER</button>
 						</div>
 					</div>
-					<div class="dishes__list-card">
-						<div class="dishes__picture">
-							<img src="./img/dish5.png" alt="" />
-							<img src="./icons/shr.png" alt="" class="dishes__share-button" />
+					<div class="dishes__list-item">
+						<img class="dishes__img" src="./img/dish5.png" alt="">
+						<img class="dishes__share-button" src="./icons/shr.png" alt="">
+						<div class="dishes__text">
+							<p class="dishes__title">Featured Meal</p>
+							<p class="dishes__subtitle">Served with french fries + drink</p>
+							<p class="dishes__description">
+								Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...
+							</p>
 						</div>
-						<div class="dishes__list-title">
-							Featured Meal
-							<div class="dishes__list-signature">Served with french fries + drink</div>
-							<div class="dishes__list-description">
-								Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and
-								more...
+						<div class="dishes__buttons">
+							<div class="dishes__stars">
+								<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0_4_217)">
+									<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+									</g>
+									</svg>
+									<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+										</mask>
+										<g mask="url(#mask0_4_217)">
+										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+										</g>
+										</svg>
+										<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0_4_217)">
+											<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+											</g>
+											</svg>
+											<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+												</mask>
+												<g mask="url(#mask0_4_217)">
+												<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+												</g>
+												</svg>	
+												<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+													</mask>
+													<g mask="url(#mask0_4_217)">
+													<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+													</g>
+													</svg>								
 							</div>
-						</div>
-						<div class="dishes__raiting">
-							<div class="dishes__raiting-stars" data-total="0">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="5"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="4"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="3"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="2"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="1"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-							</div>
-							<div class="dishes__raiting-counter">12</div>
-							<button class="dishes__order-btn">ORDER</button>
+							<div class="dishes__raiting-number">12</div>
+							<button class="dishes__order-button">ORDER</button>
 						</div>
 					</div>
-					<div class="dishes__list-card">
-						<div class="dishes__picture">
-							<img src="./img/dish6.png" alt="" />
-							<img src="./icons/shr.png" alt="" class="dishes__share-button" />
+					<div class="dishes__list-item">
+						<img class="dishes__img" src="./img/dish1.png" alt="">
+						<img class="dishes__share-button" src="./icons/shr.png" alt="">
+						<div class="dishes__text">
+							<p class="dishes__title">Featured Meal</p>
+							<p class="dishes__subtitle">Served with french fries + drink</p>
+							<p class="dishes__description">
+								Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...
+							</p>
 						</div>
-						<div class="dishes__list-title">
-							Featured Meal
-							<div class="dishes__list-signature">Served with french fries + drink</div>
-							<div class="dishes__list-description">
-								Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and
-								more...
+						<div class="dishes__buttons">
+							<div class="dishes__stars">
+								<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0_4_217)">
+									<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+									</g>
+									</svg>
+									<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+										</mask>
+										<g mask="url(#mask0_4_217)">
+										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+										</g>
+										</svg>
+										<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0_4_217)">
+											<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+											</g>
+											</svg>
+											<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+												</mask>
+												<g mask="url(#mask0_4_217)">
+												<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+												</g>
+												</svg>	
+												<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+													</mask>
+													<g mask="url(#mask0_4_217)">
+													<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+													</g>
+													</svg>								
 							</div>
-						</div>
-						<div class="dishes__raiting">
-							<div class="dishes__raiting-stars" data-total="0">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="5"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="4"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="3"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="2"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="1"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-							</div>
-							<div class="dishes__raiting-counter">12</div>
-							<button class="dishes__order-btn">ORDER</button>
+							<div class="dishes__raiting-number">12</div>
+							<button class="dishes__order-button">ORDER</button>
 						</div>
 					</div>
-					<div class="dishes__list-card">
-						<div class="dishes__picture">
-							<img src="./img/dish4.png" alt="" />
-							<img src="./icons/shr.png" alt="" class="dishes__share-button" />
+					<div class="dishes__list-item">
+						<img class="dishes__img" src="./img/dish1.png" alt="">
+						<img class="dishes__share-button" src="./icons/shr.png" alt="">
+						<div class="dishes__text">
+							<p class="dishes__title">Featured Meal</p>
+							<p class="dishes__subtitle">Served with french fries + drink</p>
+							<p class="dishes__description">
+								Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...
+							</p>
 						</div>
-						<div class="dishes__list-title">
-							Featured Meal
-							<div class="dishes__list-signature">Served with french fries + drink</div>
-							<div class="dishes__list-description">
-								Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and
-								more...
+						<div class="dishes__buttons">
+							<div class="dishes__stars">
+								<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0_4_217)">
+									<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+									</g>
+									</svg>
+									<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+										</mask>
+										<g mask="url(#mask0_4_217)">
+										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+										</g>
+										</svg>
+										<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0_4_217)">
+											<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+											</g>
+											</svg>
+											<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+												</mask>
+												<g mask="url(#mask0_4_217)">
+												<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+												</g>
+												</svg>	
+												<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+													</mask>
+													<g mask="url(#mask0_4_217)">
+													<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+													</g>
+													</svg>								
 							</div>
-						</div>
-						<div class="dishes__raiting">
-							<div class="dishes__raiting-stars" data-total="0">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="5"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="4"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="3"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="2"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="1"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-							</div>
-							<div class="dishes__raiting-counter">12</div>
-							<button class="dishes__order-btn">ORDER</button>
+							<div class="dishes__raiting-number">12</div>
+							<button class="dishes__order-button">ORDER</button>
 						</div>
 					</div>
-					<div class="dishes__list-card">
-						<div class="dishes__picture">
-							<img src="./img/dish2.png" alt="" />
-							<img src="./icons/shr.png" alt="" class="dishes__share-button" />
+					<div class="dishes__list-item">
+						<img class="dishes__img" src="./img/dish1.png" alt="">
+						<img class="dishes__share-button" src="./icons/shr.png" alt="">
+						<div class="dishes__text">
+							<p class="dishes__title">Featured Meal</p>
+							<p class="dishes__subtitle">Served with french fries + drink</p>
+							<p class="dishes__description">
+								Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...
+							</p>
 						</div>
-						<div class="dishes__list-title">
-							Featured Meal
-							<div class="dishes__list-signature">Served with french fries + drink</div>
-							<div class="dishes__list-description">
-								Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and
-								more...
+						<div class="dishes__buttons">
+							<div class="dishes__stars">
+								<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0_4_217)">
+									<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+									</g>
+									</svg>
+									<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+										</mask>
+										<g mask="url(#mask0_4_217)">
+										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+										</g>
+										</svg>
+										<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0_4_217)">
+											<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+											</g>
+											</svg>
+											<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+												</mask>
+												<g mask="url(#mask0_4_217)">
+												<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+												</g>
+												</svg>	
+												<svg class="dishes__stars-border" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<mask id="mask0_4_217" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="19">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="white"/>
+													</mask>
+													<g mask="url(#mask0_4_217)">
+													<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D"/>
+													</g>
+													</svg>								
 							</div>
-						</div>
-						<div class="dishes__raiting">
-							<div class="dishes__raiting-stars" data-total="0">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="5"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="4"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="3"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="2"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="dishes__raiting-stars-border"
-									data-star="1"
-									width="20"
-									height="19"
-									viewBox="0 0 20 19"
-									fill="none"
-								>
-									<mask
-										id="mask0_4_217"
-										style="mask-type: luminance"
-										maskUnits="userSpaceOnUse"
-										x="0"
-										y="0"
-										width="20"
-										height="19"
-									>
-										<path
-											fill-rule="evenodd"
-											clip-rule="evenodd"
-											d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4L6.24 15.67L7.24 11.39L3.92 8.51L8.3 8.13L10 4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z"
-											fill="white"
-										/>
-									</mask>
-									<g mask="url(#mask0_4_217)">
-										<rect x="-3" y="-3" width="26" height="26" fill="#4D4D4D" />
-									</g>
-								</svg>
-							</div>
-							<div class="dishes__raiting-counter">12</div>
-							<button class="dishes__order-btn">ORDER</button>
+							<div class="dishes__raiting-number">12</div>
+							<button class="dishes__order-button">ORDER</button>
 						</div>
 					</div>
 				</div>
