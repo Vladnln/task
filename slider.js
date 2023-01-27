@@ -1,0 +1,10 @@
+let position = 0;
+const slidesToShow = 4;
+const slidesToScroll = 1;
+const container = document.querySelector(".slider__container");
+const track = document.querySelector(".slider__content");
+const btnPrev = document.querySelector(".button__left");
+const btnNext = document.querySelector(".button__right");
+const itemsCount = document.querySelectorAll(".slider__img").length;
+const itemWidth = container.clientWidth / slidesToShow;
+const movePosition = slidesToScroll * itemWidth;
