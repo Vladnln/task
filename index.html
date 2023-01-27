@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
+			<div class="header__container">
 				<img class="logo" src="./img/Logo.png" alt="" >
 				
 				<nav>
@@ -62,8 +62,8 @@
 					<img src="./icons/1. White.png" alt="" class="slider__button">
 						<div class="slider__wrapper">							
 							<div class="slider__content">															
-							  <img src="./img/food1.png" alt="">
-							  <img src="./img/food2.png" alt="">																					
+							  <img class="slider__img_left" src="./img/food1.png" alt="">
+							  <img class="slider__img_right" src="./img/food2.png" alt="">																					
 							</div>														
 						</div>
 						<img src="./icons/1. White-1.png" alt="" class="slider__button">
@@ -167,7 +167,7 @@
 						</div>
 					</div>
 					<div class="dishes__list-item">
-						<img class="dishes__img" src="./img/dish6.png" alt="">
+						<img class="dishes__img" src="./img/dish3.png" alt="">
 						<img class="dishes__share-button" src="./icons/shr.png" alt="">
 						<div class="dishes__text">
 							<p class="dishes__title">Featured Meal</p>
@@ -281,7 +281,7 @@
 						</div>
 					</div>
 					<div class="dishes__list-item">
-						<img class="dishes__img" src="./img/dish1.png" alt="">
+						<img class="dishes__img" src="./img/dish6.png" alt="">
 						<img class="dishes__share-button" src="./icons/shr.png" alt="">
 						<div class="dishes__text">
 							<p class="dishes__title">Featured Meal</p>
@@ -338,7 +338,7 @@
 						</div>
 					</div>
 					<div class="dishes__list-item">
-						<img class="dishes__img" src="./img/dish1.png" alt="">
+						<img class="dishes__img" src="./img/dish4.png" alt="">
 						<img class="dishes__share-button" src="./icons/shr.png" alt="">
 						<div class="dishes__text">
 							<p class="dishes__title">Featured Meal</p>
@@ -395,7 +395,7 @@
 						</div>
 					</div>
 					<div class="dishes__list-item">
-						<img class="dishes__img" src="./img/dish1.png" alt="">
+						<img class="dishes__img" src="./img/dish2.png" alt="">
 						<img class="dishes__share-button" src="./icons/shr.png" alt="">
 						<div class="dishes__text">
 							<p class="dishes__title">Featured Meal</p>
@@ -454,32 +454,29 @@
 				</div>
 			</div>
 		</div>
-		<footer>
-			<div class="footer__header">
-				<div class="location">
-					<div class="location__wrapper">
-						<img src="./icons/ic_watch_later.png" alt="" />
-						<p>Today 10:00 am - 7:00 pm</p>
-						<p class="slogan">Working hours</p>
-					</div>
-					<div class="location__wrapper">
-						<img src="./icons/ic_near_me.png" alt="" />
-						<p>Velyka Vasylkivska 100</p>
-						<p class="slogan">Get Directions</p>
-					</div>
-					<div class="location__wrapper">
-						<img src="./icons/ic_call.png" alt="" />
-						<p>+38 (063)833 24 15</p>
-						<p class="slogan">Call Online</p>
-					</div>
+		<footer class="footer">
+			<div class="contacts">
+				<div class="contacts__wrapper">
+					<img src="./icons/ic_watch_later.png" alt="" />
+					<p class="contacts__title">Today 10:00 am - 7:00 pm</p>
+					<p class="contacts__subtitle">Working hours</p>
 				</div>
+				<div class="contacts__wrapper">
+					<img src="./icons/ic_near_me.png" alt="" />
+					<p class="contacts__title">Velyka Vasylkivska 100</p>
+					<p class="contacts__subtitle">Get Directions</p>
 				</div>
-			</div>
-			<div class="footer__logo">
-				<img src="./img/Logo.png" alt="" />
-				<p>© Designed by Yellow Snow. All Rights Reserved.</p>
+				<div class="contacts__wrapper">
+					<img src="./icons/ic_call.png" alt="" />
+					<p class="contacts__title">+38 (063)833 24 15</p>
+					<p class="contacts__subtitle">Call Online</p>
+				</div>
 			</div>
 		</footer>
+		<div class="footer__container">
+			<img class="logo" src="./img/Logo.png" alt="">
+			<p class="footer__description">© Designed by Yellow Snow. All Rights Reserved. </p>
+		</div>
 
 		<script src="/task/index.js"></script>
 	</body>
