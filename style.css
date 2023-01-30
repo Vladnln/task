@@ -225,13 +225,13 @@ button {
 }
 
 .slider {
-  max-width: 1110px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 .slider .slider__container {
   overflow: hidden;
+  max-width: 735px;
 }
 .slider .button__left {
   max-width: 100%;
@@ -248,7 +248,6 @@ button {
   cursor: pointer;
 }
 .slider .slider__img {
-  max-width: 100%;
   border-radius: 6px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -256,6 +255,7 @@ button {
 .slider__content {
   display: flex;
   gap: 34px;
+  transition: ease-in-out 0.4s;
 }
 
 .title {
@@ -486,6 +486,7 @@ button {
 
 .dishes__stars-border {
   font-size: 26px;
+  color: #4D4D4D;
 }
 
 .footer {
