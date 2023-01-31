@@ -2,20 +2,25 @@
 @font-face {
 	font-family: "Helvetica Neue";
 	src: local("Helvetica Neue Light"), local("Helvetica-Neue-Light"),
-		url("HelveticaNeueCyr-Light.woff2") format("woff2"), url("HelveticaNeueCyr-Light.woff") format("woff"),
-		url("HelveticaNeueCyr-Light.ttf") format("truetype");
+		url("./font/HelveticaNeueCyr-Light.woff2") format("woff2"), 
+		url("./font/HelveticaNeueCyr-Light.woff") format("woff"),
+		url("./font/HelveticaNeueCyr-Light.ttf") format("truetype");
 	font-weight: 300;
 	font-style: normal;
+
 	font-family: "Helvetica Neue";
 	src: local("Helvetica Neue Medium"), local("Helvetica-Neue-Medium"),
-		url("HelveticaNeueCyr-Medium.woff2") format("woff2"), url("HelveticaNeueCyr-Medium.woff") format("woff"),
-		url("HelveticaNeueCyr-Medium.ttf") format("truetype");
+		url("./font/HelveticaNeueCyr-Medium.woff2") format("woff2"), 
+		url("./font/HelveticaNeueCyr-Medium.woff") format("woff"),
+		url("./font/HelveticaNeueCyr-Medium.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
+
 	font-family: "Helvetica Neue";
 	src: local("Helvetica Neue Bold"), local("Helvetica-Neue-Bold"),
-		url("HelveticaNeueCyr-Bold.woff2") format("woff2"), url("HelveticaNeueCyr-Bold.woff") format("woff"),
-		url("HelveticaNeueCyr-Bold.ttf") format("truetype");
+		url("./font/HelveticaNeueCyr-Bold.woff2") format("woff2"), 
+		url("./font/HelveticaNeueCyr-Bold.woff") format("woff"),
+		url("./font/HelveticaNeueCyr-Bold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
 }
@@ -73,7 +78,7 @@ p {
 body {
 	background: url("./img/placeholder.png") no-repeat scroll top right;
 	background-size: contain;
-	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	background-color: #1a1a1a;
 	margin: 0 auto;
 	color: #fff;
@@ -145,7 +150,7 @@ nav {
 	letter-spacing: -0.2px;
 	color: #ffff;
 	opacity: 0.7;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 16px;
 	max-width: 555px;
 	text-align: center;
@@ -458,7 +463,7 @@ button {
 }
 .dishes__stars-border {
 	font-size: 26px;
-	color: #4D4D4D;
+	color: #4d4d4d;
 }
 .footer {
 	background: #252525;
