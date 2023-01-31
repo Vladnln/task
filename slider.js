@@ -37,5 +37,5 @@ const checkBtns = () => {
 checkBtns();
 btnRight.addEventListener("click", onClickBtnRight);
 btnLeft.addEventListener("click", onClickLeftRight);
-console.log(imgWidth);
+
 
