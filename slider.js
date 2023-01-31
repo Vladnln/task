@@ -34,8 +34,15 @@ const checkBtns = () => {
 
 };
 
+const adaptslider = () => {
+    document.querySelector('body').offsetWidth;
+    
+    const widthWind = imgCount - (Math.abs(position) + slidesToShow * imgWidth) / imgWidth;
+}
+
+
+
+
 checkBtns();
 btnRight.addEventListener("click", onClickBtnRight);
 btnLeft.addEventListener("click", onClickLeftRight);
-
-
