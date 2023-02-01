@@ -10,7 +10,7 @@ const img = sliderBlock.querySelectorAll(".slider__img");
 const imgCount = img.length;
 const imgWidth = img[1].offsetWidth + 34;
 const movePosition = slidesToScroll * imgWidth;
-const pageWidth = document.documentElement.scrollWidth
+const pageWidth = document.documentElement.scrollWidth;
 
 
 const onClickBtnRight = () =>  {
@@ -37,34 +37,33 @@ const checkBtns = () => {
 };
 
 
+const adaptSlider = () => {
+    const track = document.documentElement.clientWidth
 
-document.addEventListener('DOMContentLoaded', () => {
-    if(document.documentElement.clientWidth < 1000){
-        container.style = 'width:350px'
-    }
-})
-
+    
+}
 
 
+// document.addEventListener('resize', function (event)  {
+//     if(document.documentElement.clientWidth < 1000){
+//         img.style.width='350'
+//         track.style.width='720'
+//     }
+//     if(document.documentElement.clientWidth < 790){
+//         track.style.width='260px'
+//         img.style.width='100'
+//     }
+//     if(document.documentElement.clientWidth < 700){
+//         track.style.width='410'
+//         img.style.width='70'
+//     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// })
 
 
 
 
+adaptSlider();
 setPosition();
 checkBtns();
 btnRight.addEventListener("click", onClickBtnRight);
