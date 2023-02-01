@@ -226,6 +226,7 @@ button {
 	.slider__container {
 		overflow: hidden;
 		max-width: 735px;
+		margin: 0 auto;
 	}
 	.button__left {
 		max-width: 100%;
@@ -242,6 +243,8 @@ button {
 		cursor: pointer;
 	}
 	.slider__img {
+		width: 100%;
+		height: auto;
 		border-radius: 6px;
 		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 	}
