@@ -37,33 +37,23 @@ const checkBtns = () => {
 };
 
 
-const adaptSlider = () => {
-    const track = document.documentElement.clientWidth
+document.addEventListener('resize', function(slidesToShow) {
+    if(document.documentElement.clientWidth < 1000){
+        img.style.width='350px'
+        track.style.width='720px'
+    }
+    if(document.documentElement.clientWidth < 790){
+        track.style.width='260px'
+        img.style.width='100px'
+    }
+    if(document.documentElement.clientWidth < 700){
+        track.style.width='410px'
+        img.style.width='70px'
+    }
 
-    
-}
-
-
-// document.addEventListener('resize', function (event)  {
-//     if(document.documentElement.clientWidth < 1000){
-//         img.style.width='350'
-//         track.style.width='720'
-//     }
-//     if(document.documentElement.clientWidth < 790){
-//         track.style.width='260px'
-//         img.style.width='100'
-//     }
-//     if(document.documentElement.clientWidth < 700){
-//         track.style.width='410'
-//         img.style.width='70'
-//     }
-
-// })
+})
 
 
-
-
-adaptSlider();
 setPosition();
 checkBtns();
 btnRight.addEventListener("click", onClickBtnRight);
