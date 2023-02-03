@@ -19,6 +19,7 @@ const onClickBtnRight = () =>  {
     setPosition();
     checkBtns();
 };
+
 const onClickLeftRight = () => {
     const imgLeft = Math.abs(position)/ imgWidth;
     position += imgLeft >= slidesToScroll ? movePosition : imgLeft * imgWidth;
@@ -27,33 +28,28 @@ const onClickLeftRight = () => {
     checkBtns();
     
 };
+
 const setPosition = () => {
     track.style.transform = `translateX(${position}px)`;
 };
+
 const checkBtns = () => {
     btnLeft.disabled = position === 0;
     btnRight.disabled = position <= -(imgCount - slidesToShow) * imgWidth;
 
 };
 
-
-document.addEventListener('resize', function(slidesToShow) {
+const Slider = () => {
+document.addEventListener('resize', function(sliderBlock) {
     if(document.documentElement.clientWidth < 1000){
-        img.style.width='350px'
-        track.style.width='720px'
+        //container.style.width='300px'
+        track.style.width='100px'
     }
-    if(document.documentElement.clientWidth < 790){
-        track.style.width='260px'
-        img.style.width='100px'
-    }
-    if(document.documentElement.clientWidth < 700){
-        track.style.width='410px'
-        img.style.width='70px'
-    }
-
 })
+}
 
-
+window.addEventListener('resize', setPosition);
+Slider();
 setPosition();
 checkBtns();
 btnRight.addEventListener("click", onClickBtnRight);
