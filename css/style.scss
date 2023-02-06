@@ -238,19 +238,33 @@ button {
 	display: flex;
 }
 .owl-next{
+	font-weight: 800;
 	margin-left: 10px;
 	width: 40px;
 	height: 40px;
 	text-align: center;
+	border-radius: 50%;
 	color: #b3b3b3;
 	background-color: #303030;
 }
 .owl-prev{
+	font-weight: 800;
 	width: 40px;
 	height: 40px;
 	text-align: center;
 	color: #b3b3b3;
+	border-radius: 50%;
 	background-color: #303030;
+}
+.owl-prev:hover{
+	background-color: #34c759;
+	transition: ease 0.3s;
+	color: #191919;
+}
+.owl-next:hover{
+	background-color: #34c759;
+	transition: ease 0.3s;
+	color: #191919;
 }
 .owl-nav{
 	padding-top: 20px;
