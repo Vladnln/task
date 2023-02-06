@@ -5,8 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Healthy Switcher</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/owl.carousel.min.css">
+		<link rel="stylesheet" href="./css/owl.theme.default.min.css">
 		<link type="image/x-icon" href="./icons/Logo.ico" rel="shortcut icon">
+
 	</head>
 	<body>
 		<header class="header">
@@ -62,18 +65,14 @@
 					voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.
 				</h2>
 				<div class="slider">
-					<img src="./icons/1. White.png" alt="" class="slider__button button__left" />
-						<div class="slider__container">
-							<div class="slider__content">
-								<img class="slider__img" src="./img/dish1.png" alt="" />
-								<img class="slider__img" src="./img/dish2.png" alt="" />
-								<img class="slider__img" src="./img/dish3.png" alt="" />
-								<img class="slider__img" src="./img/dish4.png" alt="" />
-								<img class="slider__img" src="./img/dish5.png" alt="" />
-								<img class="slider__img" src="./img/dish6.png" alt="" />
-							</div>
-						</div>
-					<img src="./icons/1. White-1.png" alt="" class="slider__button button__right" />
+					<div class="owl-stage">
+						<div class="owl-item"><img class="slider__img" src="./img/dish1.png" alt=""></div>
+						<div class="owl-item"><img class="slider__img" src="./img/dish2.png" alt=""></div>
+						<div class="owl-item"><img class="slider__img" src="./img/dish3.png" alt=""></div>
+						<div class="owl-item"><img class="slider__img" src="./img/dish4.png" alt=""></div>
+						<div class="owl-item"><img class="slider__img" src="./img/dish5.png" alt=""></div>
+						<div class="owl-item"><img class="slider__img" src="./img/dish6.png" alt=""></div>
+					</div>
 				</div>
 			</section>
 
@@ -286,7 +285,9 @@
 				<p class="footer__description">© Designed by Yellow Snow. All Rights Reserved.</p>
 			</div>
 		</footer>
-
-		<script src="./slider.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/owl.carousel.min.js"></script>
+		<script src="./js/slider.js"></script>
 	</body>
 </html>
