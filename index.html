@@ -5,10 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Healthy Switcher</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 		<link rel="stylesheet" href="./css/style.css" />
-		<link rel="stylesheet" href="./css/owl.carousel.min.css">
-		<link rel="stylesheet" href="./css/owl.theme.default.min.css">
 		<link type="image/x-icon" href="./icons/Logo.ico" rel="shortcut icon">
+
 
 	</head>
 	<body>
@@ -64,18 +65,18 @@
 					In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur
 					voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.
 				</h2>
-				<div class="slider">
-					<div class="slider__wrapper">
-						<div class="owl-stage">
-							<div class="owl-item"><img class="slider__img" src="./img/dish1.png" alt=""></div>
-							<div class="owl-item"><img class="slider__img" src="./img/dish2.png" alt=""></div>
-							<div class="owl-item"><img class="slider__img" src="./img/dish3.png" alt=""></div>
-							<div class="owl-item"><img class="slider__img" src="./img/dish4.png" alt=""></div>
-							<div class="owl-item"><img class="slider__img" src="./img/dish5.png" alt=""></div>
-							<div class="owl-item"><img class="slider__img" src="./img/dish6.png" alt=""></div>
-						</div>
+				<div class="slider swiper">
+					<div class="slider__list swiper-wrapper">
+					  <div class="slider__slide swiper-slide"><img src="./img/dish1.png" alt=""></div>
+					  <div class="slider__slide swiper-slide"><img src="./img/dish2.png" alt=""></div>
+					  <div class="slider__slide swiper-slide"><img src="./img/dish3.png" alt=""></div>
+					  <div class="slider__slide swiper-slide"><img src="./img/dish4.png" alt=""></div>
+					  <div class="slider__slide swiper-slide"><img src="./img/dish5.png" alt=""></div>
+					  <div class="slider__slide swiper-slide"><img src="./img/dish6.png" alt=""></div>
 					</div>
-				</div>
+					<div class="swiper-button-prev custom-prev"><img src="./icons/arrow-left-solid.svg" alt=""></div>
+					<div class="swiper-button-next custom-next"><img src="./icons/arrow-right-solid.svg" alt=""></div>
+ 				</div>
 			</section>
 
 			<section class="events">
@@ -287,9 +288,6 @@
 				<p class="footer__description">© Designed by Yellow Snow. All Rights Reserved.</p>
 			</div>
 		</footer>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-		<script src="./js/jquery.min.js"></script>
-		<script src="./js/owl.carousel.min.js"></script>
 		<script src="./js/slider.js"></script>
 		<script src="https://kit.fontawesome.com/b3f5a431f4.js" crossorigin="anonymous"></script>
 	</body>

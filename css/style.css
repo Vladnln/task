@@ -62,27 +62,24 @@
     font-size: 13px;
   }
 }
-@media (max-width: 958px) {
-  .owl-item img {
+@media (max-width: 895px) {
+  .swiper-slide img {
     width: 320px;
   }
 }
-@media (max-width: 476px) {
-  .owl-item img {
-    width: 250px;
+@media (max-width: 849px) {
+  .swiper-slide img {
+    width: 300px;
   }
 }
-@media (max-width: 388px) {
-  .owl-item img {
+@media (max-width: 751px) {
+  .swiper-slide img {
+    width: 240px;
+  }
+}
+@media (max-width: 389px) {
+  .swiper-slide img {
     width: 230px;
-  }
-}
-@media (max-width: 630px) {
-  .owl-next {
-    margin-right: 2%;
-  }
-  .owl-prev {
-    margin-left: 1%;
   }
 }
 @media (max-width: 516px) {
@@ -257,75 +254,47 @@ button {
   margin: auto;
 }
 
-.owl-stage {
-  display: flex;
+.swiper-slide img {
+  border-radius: 6px;
 }
 
-.owl-nav {
-  position: absolute;
-  width: 100%;
-  height: 0px;
-  top: 40%;
-  z-index: 999;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 7px 0px 7px;
+.swiper-button-next::after {
+  display: none;
 }
 
-.owl-nav button {
+.swiper-button-prev::after {
+  display: none;
+}
+
+.custom-next:hover {
+  background-color: #34c759;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-prev:hover {
+  background-color: #34c759;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-next {
+  width: 26px;
+  height: 26px;
   border-radius: 100%;
   padding: 17px;
   background-color: #262626;
   border: 2px solid #303030;
-  color: #4D4D4D;
 }
 
-.owl-prev {
-  position: absolute;
-}
-
-.owl-item {
-  max-width: 350px;
-  margin: 0 auto;
-}
-
-.owl-next {
-  position: absolute;
-  right: 2%;
-}
-
-.owl-prev:hover {
-  background-color: #34c759;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
-.owl-next:hover {
-  background-color: #34c759;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
-.fa-solid {
-  font-size: 26px;
-}
-
-.slider {
-  overflow: hidden;
-  position: relative;
-  max-width: 981px;
-  margin: 0 auto;
-}
-
-.slider__wrapper {
-  position: relative;
-}
-
-.slider__img {
-  border-radius: 6px;
+.custom-prev {
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  padding: 17px;
+  background-color: #262626;
+  border: 2px solid #303030;
+  color: #4d4d4d;
 }
 
 .title {
