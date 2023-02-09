@@ -64,7 +64,7 @@
 }
 @media (max-width: 958px) {
   .owl-item img {
-    width: 330px;
+    width: 320px;
   }
 }
 @media (max-width: 476px) {
@@ -287,6 +287,11 @@ button {
   position: absolute;
 }
 
+.owl-item {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
 .owl-next {
   position: absolute;
   right: 2%;
@@ -295,11 +300,13 @@ button {
 .owl-prev:hover {
   background-color: #34c759;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .owl-next:hover {
   background-color: #34c759;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .fa-solid {
@@ -309,6 +316,8 @@ button {
 .slider {
   overflow: hidden;
   position: relative;
+  max-width: 981px;
+  margin: 0 auto;
 }
 
 .slider__wrapper {
