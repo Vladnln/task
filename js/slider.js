@@ -7,26 +7,11 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.custom-prev',
   },
   breakpoints: {
-    1100: {
-      spaceBetween: -120
-    },
-    932: {
-      spaceBetween: -75
-    },
-    910: {
-      spaceBetween: -70
-    },
-    879: {
-      spaceBetween: -50
-    },
-    849: {
-      spaceBetween: -60
-    },
-    750: {
-      spaceBetween: -60
-    },
-    732: {
+    900: {
       slidesPerView: 2
+    },
+    850: {
+      slidesPerView: 1
     },
     0: {
       slidesPerView: 1

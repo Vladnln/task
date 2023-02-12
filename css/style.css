@@ -13,6 +13,10 @@
   font-weight: 700;
   font-style: normal;
 }
+* {
+  box-sizing: border-box;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 7px;
@@ -24,11 +28,6 @@
   background-color: #252525;
 }
 
-@media (max-width: 441px) {
-  .slider__button {
-    width: 32px;
-  }
-}
 @media (max-width: 400px) {
   .main__title {
     font-size: 40px;
@@ -62,24 +61,38 @@
     font-size: 13px;
   }
 }
-@media (max-width: 895px) {
+@media (max-width: 1072px) {
   .swiper-slide img {
     width: 320px;
   }
 }
-@media (max-width: 849px) {
+@media (max-width: 1008px) {
   .swiper-slide img {
     width: 300px;
   }
 }
-@media (max-width: 751px) {
+@media (max-width: 962px) {
   .swiper-slide img {
     width: 240px;
   }
 }
-@media (max-width: 389px) {
+@media (max-width: 850px) {
   .swiper-slide img {
-    width: 230px;
+    width: 300px;
+  }
+}
+@media (max-width: 670px) {
+  .swiper-slide img {
+    width: 220px;
+  }
+  .fa-solid {
+    font-size: 16px;
+  }
+  .custom-next {
+    padding: 0px;
+  }
+  .custom-prev {
+    padding: 0px;
   }
 }
 @media (max-width: 516px) {
@@ -235,12 +248,13 @@ button {
 .about {
   width: 100%;
   height: auto;
-  padding-top: 60px;
-  padding-bottom: 90px;
   background-color: #252525;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   text-align: center;
+}
+.about__wrapper {
+  padding: 60px 185px 90px;
 }
 
 .about__description {
@@ -254,8 +268,13 @@ button {
   margin: auto;
 }
 
+.slider__container {
+  position: relative;
+}
+
 .swiper-slide img {
   border-radius: 6px;
+  max-width: 100%;
 }
 
 .swiper-button-next::after {
@@ -282,12 +301,12 @@ button {
   width: 26px;
   height: 26px;
   border-radius: 100%;
-  padding: 17px;
+  padding: 30px;
   background-color: #262626;
   border: 2px solid #303030;
   color: #4d4d4d;
   font-size: 26px;
-  right: 35px;
+  right: -110px;
   left: auto;
 }
 
@@ -295,12 +314,12 @@ button {
   width: 26px;
   height: 26px;
   border-radius: 100%;
-  padding: 17px;
+  padding: 30px;
   background-color: #262626;
   border: 2px solid #303030;
   color: #4d4d4d;
   font-size: 26px;
-  left: 35px;
+  left: -110px;
   right: auto;
 }
 
@@ -408,6 +427,7 @@ button {
 }
 
 .events-list__wrapper:hover {
+  transition: 0.3s ease;
   cursor: pointer;
   background-color: #34c759;
   color: #191919;
