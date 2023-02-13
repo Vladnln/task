@@ -28,6 +28,11 @@
   background-color: #252525;
 }
 
+@media (max-width: 334px) {
+  .nav__link {
+    font-size: 14px;
+  }
+}
 @media (max-width: 400px) {
   .main__title {
     font-size: 40px;
@@ -45,11 +50,6 @@
     size: 25px;
   }
 }
-@media (max-width: 334px) {
-  .nav__link {
-    font-size: 14px;
-  }
-}
 @media (max-width: 392px) {
   .contacts__subtitle {
     font-size: 10px;
@@ -59,6 +59,43 @@
   }
   .footer__description {
     font-size: 13px;
+  }
+}
+@media (max-width: 590px) {
+  .about__wrapper {
+    padding: 60px 182px 90px !important;
+  }
+  .custom-next,
+  .custom-prev {
+    padding: 25px !important;
+  }
+}
+@media (max-width: 448px) {
+  .about__wrapper {
+    padding: 60px 112px 90px !important;
+  }
+}
+@media (max-width: 354px) {
+  .about__wrapper {
+    padding: 60px 1px 90px !important;
+  }
+  .custom-next,
+  .custom-prev {
+    display: none;
+  }
+}
+@media (max-width: 630px) {
+  .custom-next,
+  .custom-prev {
+    padding: 25px;
+  }
+  .swiper-slide img {
+    width: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .swiper-slide img {
+    width: 220px;
   }
 }
 @media (max-width: 1072px) {
@@ -75,29 +112,24 @@
   .swiper-slide img {
     width: 240px;
   }
+  .slider__arrow {
+    width: 13px;
+    height: 13px;
+  }
 }
 @media (max-width: 850px) {
   .swiper-slide img {
     width: 300px;
   }
 }
-@media (max-width: 670px) {
-  .swiper-slide img {
-    width: 220px;
-  }
-  .fa-solid {
-    font-size: 16px;
-  }
-  .custom-next {
-    padding: 0px;
-  }
-  .custom-prev {
-    padding: 0px;
-  }
-}
 @media (max-width: 516px) {
   .contacts__title {
     font-size: 12px;
+  }
+}
+@media (max-width: 334px) {
+  .nav__link {
+    font-size: 14px;
   }
 }
 p {
@@ -304,7 +336,6 @@ button {
   padding: 30px;
   background-color: #262626;
   border: 2px solid #303030;
-  color: #4d4d4d;
   font-size: 26px;
   right: -110px;
   left: auto;
@@ -317,7 +348,6 @@ button {
   padding: 30px;
   background-color: #262626;
   border: 2px solid #303030;
-  color: #4d4d4d;
   font-size: 26px;
   left: -110px;
   right: auto;
@@ -515,6 +545,7 @@ button {
   padding: 0px 32px;
 }
 .dishes__order-button:hover {
+  transition: 0.3s ease;
   background-color: #34c759;
   color: #252525;
   cursor: pointer;
@@ -546,6 +577,7 @@ button {
 
 .dishes__stars-border:hover,
 .dishes__stars-border:hover ~ .dishes__stars-border {
+  transition: 0.3s ease;
   color: #f9ad3d;
   cursor: pointer;
 }
