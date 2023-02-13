@@ -63,7 +63,7 @@
 }
 @media (max-width: 590px) {
   .about__wrapper {
-    padding: 60px 182px 90px !important;
+    padding: 60px 115px 90px !important;
   }
   .custom-next,
   .custom-prev {
@@ -72,7 +72,11 @@
 }
 @media (max-width: 448px) {
   .about__wrapper {
-    padding: 60px 112px 90px !important;
+    padding: 60px 48px 90px !important;
+  }
+  .custom-next,
+  .custom-prev {
+    display: none;
   }
 }
 @media (max-width: 354px) {
