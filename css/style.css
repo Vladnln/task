@@ -637,7 +637,7 @@ button {
   font-size: 12px;
   line-height: 40px;
   padding: 0px 32px;
-  margin: 0 5px 0 5px;
+  margin: 0 10px 0 10px;
 }
 .calculating__choose-item:hover {
   transition: 0.3s ease;

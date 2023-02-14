@@ -96,10 +96,12 @@
 }
 
 @media (max-width: 630px) {
+
 	.custom-next,
 	.custom-prev {
 		padding: 25px;
 	}
+
 	.swiper-slide {
 		img {
 			width: 220px;
@@ -119,6 +121,7 @@
 	.about__wrapper {
 		padding: 60px 48px 90px !important;
 	}
+
 	.custom-next,
 	.custom-prev {
 		//
@@ -130,6 +133,7 @@
 	.about__wrapper {
 		padding: 60px 48px 90px !important;
 	}
+
 	.custom-next,
 	.custom-prev {
 		display: none;
@@ -140,6 +144,7 @@
 	.about__wrapper {
 		padding: 60px 1px 90px !important;
 	}
+
 	.custom-next,
 	.custom-prev {
 		display: none;
@@ -168,6 +173,7 @@
 			width: 350px;
 		}
 	}
+
 	.slider__arrow {
 		width: 13px;
 		height: 13px;
@@ -655,7 +661,7 @@ button {
 }
 
 .dishes__stars-border:hover,
-.dishes__stars-border:hover ~ .dishes__stars-border {
+.dishes__stars-border:hover~.dishes__stars-border {
 	transition: 0.3s ease;
 	color: #f9ad3d;
 	cursor: pointer;
@@ -674,21 +680,25 @@ button {
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 	border-radius: 6px;
 	text-align: center;
+
 	&__wrapper {
 		max-width: 750px;
 		margin: auto;
 		padding: 45px 45px;
 	}
 }
+
 .calculator__header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
 .calculator__activity {
 	display: flex;
 	align-items: center;
 }
+
 .calculating__choose-item {
 	max-width: 170px;
 	background: #262626;
@@ -699,7 +709,7 @@ button {
 	font-size: 12px;
 	line-height: 40px;
 	padding: 0px 32px;
-	margin: 0 5px 0 5px;
+	margin: 0 10px 0 10px;
 
 	&:hover {
 		transition: 0.3s ease;
@@ -724,6 +734,7 @@ button {
 	line-height: 40px;
 	padding: 0px 32px;
 	margin: 0 5px 0 5px;
+
 	&:hover {
 		transition: 0.3s ease;
 		background-color: #34c759;
@@ -751,6 +762,7 @@ button {
 	justify-content: space-evenly;
 	align-items: center;
 }
+
 .calculator__clear-btn {
 	background: #262626;
 	color: rgba(255, 255, 255, 0.5);
@@ -761,6 +773,7 @@ button {
 	font-size: 20px;
 	text-align: center;
 	margin: 0 5px 0 5px;
+
 	&:hover {
 		transition: 0.3s ease;
 		background-color: #34c759;
