@@ -276,24 +276,34 @@
 		</section>
 	</div>
 
-	<section class="calculator">
+	<div class="calculator">
 		<div class="calculator__wrapper">
 			<h1 class="title__name">Your Gender</h1>
-			<button class="calculator__button">Woman</button>
-			<button class="calculator__button">Man</button>
+			<div class="calculator__header" id="gender">
+				<div id="female" class="calculating__choose-item calculating__choose-item_active">Woman</div>
+				<div id="male" class="calculating__choose-item">Man</div>
+			</div>
 			<h1 class="title__name">Your Constitution</h1>
-			<input type="text" class="calculator__input" placeholder="Enter Height">
-			<input type="text" class="calculator__input" placeholder="Enter Weight">
-			<input type="text" class="calculator__input" placeholder="Enter Age">
+			<div class="calculating__choose_middle">
+				<input type="text" id="height" class="calculating__choose-item" placeholder="Enter Height">
+				<input type="text" id="weight" class="calculating__choose-item" placeholder="Enter Weight">
+				<input type="text" id="age" class="calculating__choose-item" placeholder="Enter Age">
+			</div>
 			<h1 class="title__name">Choose Your Physical Activity</h1>
-			<button class="calculator__button">Low Activity</button>
-			<button class="calculator__button">Weak Activity</button>
-			<button class="calculator__button">Moderate Activity</button>
-			<button class="calculator__button">High Activity</button>
-			<p class="calculator__result">Your daily calorie intake is...</p>
-			<output class="calculator__output"></output>
+			<div class="calculator__activity calculating__choose_big">
+				<div data-ratio="1.2"  id="low" class="calculating__choose-item">Low Activity</div>
+				<div data-ratio="1.375"  id="weak" class="calculating__choose-item">Weak Activity</div>
+				<div data-ratio="1.55"  id="moderate" class="calculating__choose-item">Moderate Activity</div>
+				<div data-ratio="1.725"  id="high" class="calculating__choose-item">High Activity</div>
+			</div>
+			<div class="calculator__divider"></div>
+			<div class="calculator__total">
+				<h4 class="title__name">Your daily calorie intake</h4>
+				<output class="calculating__result"></output>
+				<button class="calculator__clear-btn">×</button>
+			</div>
 		</div>
-	</section>
+	</div>
 
 	<footer class="footer">
 		<div class="footer__header">
@@ -323,7 +333,7 @@
 		</div>
 	</footer>
 	<script src="./js/slider.js"></script>
-	<script src="./js/calories.js"></script>
+	<script src="js/calories-counter.js"></script>
 </body>
 
 </html>
