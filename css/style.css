@@ -602,7 +602,7 @@ button {
 }
 
 .calculator {
-  width: 1110px;
+  max-width: 1110px;
   margin: 60px auto;
   height: auto;
   background-color: #252525;
