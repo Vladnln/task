@@ -611,7 +611,7 @@ button {
   text-align: center;
 }
 .calculator__wrapper {
-  max-width: 750px;
+  max-width: 800px;
   margin: auto;
   padding: 45px 45px;
 }
@@ -628,7 +628,7 @@ button {
 }
 
 .calculating__choose-item {
-  max-width: 170px;
+  max-width: 160px;
   background: #262626;
   color: rgba(255, 255, 255, 0.5);
   border: 2px solid #303030;
@@ -637,7 +637,7 @@ button {
   font-size: 12px;
   line-height: 40px;
   padding: 0px 32px;
-  margin: 0 10px 0 10px;
+  margin: 0 15px 0 15px;
 }
 .calculating__choose-item:hover {
   transition: 0.3s ease;
