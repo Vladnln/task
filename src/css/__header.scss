@@ -1,0 +1,32 @@
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header__container {
+  padding: 40px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+nav {
+  word-spacing: 35px;
+}
+
+.nav__link {
+  font-weight: 800;
+}
+
+.nav__link:hover {
+  color: #34c759;
+}
+
+.nav__link_active {
+  color: #34c759;
+}

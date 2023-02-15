@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
+@font-face {
+	font-family: "Helvetica Neue";
+	src: local("Helvetica Neue Light"), local("Helvetica-Neue-Light"),
+		url("./font/HelveticaNeueCyr-Light.woff2") format("woff2"),
+		url("./font/HelveticaNeueCyr-Light.woff") format("woff"),
+		url("./font/HelveticaNeueCyr-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+
+	font-family: "Helvetica Neue";
+	src: local("Helvetica Neue Medium"), local("Helvetica-Neue-Medium"),
+		url("./font/HelveticaNeueCyr-Medium.woff2") format("woff2"),
+		url("./font/HelveticaNeueCyr-Medium.woff") format("woff"),
+		url("./font/HelveticaNeueCyr-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+
+	font-family: "Helvetica Neue";
+	src: local("Helvetica Neue Bold"), local("Helvetica-Neue-Bold"),
+		url("./font/HelveticaNeueCyr-Bold.woff2") format("woff2"),
+		url("./font/HelveticaNeueCyr-Bold.woff") format("woff"),
+		url("./font/HelveticaNeueCyr-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 7px;
+	background-color: #252525;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	background-color: #34c759;
+}
+
+@media (max-width: 334px) {
+	.nav__link {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 400px) {
+	.main__title {
+		font-size: 40px;
+	}
+
+	.header__container {
+		justify-content: space-around;
+	}
+
+	.contacts__subtitle {
+		font-size: 10px;
+	}
+
+	.logo {
+		width: 170px;
+	}
+
+	.title__name {
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 392px) {
+	.contacts__subtitle {
+		font-size: 10px;
+	}
+
+	.main__subtitle {
+		font-size: 13px;
+	}
+
+	.footer__description {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 606px) {
+	.about__wrapper {
+		padding: 60px 135px 90px !important;
+	}
+}
+
+@media (max-width: 615px) {
+	.about__wrapper {
+		padding: 60px 130px 90px !important;
+	}
+}
+
+@media (max-width: 630px) {
+	.custom-next,
+	.custom-prev {
+		padding: 25px;
+	}
+
+	.swiper-slide {
+		img {
+			width: 220px;
+		}
+	}
+}
+
+@media (max-width: 670px) {
+	.swiper-slide {
+		img {
+			width: 290px;
+		}
+	}
+}
+
+@media (max-width: 598px) {
+	.about__wrapper {
+		padding: 60px 48px 90px !important;
+	}
+
+	.custom-next,
+	.custom-prev {
+		//
+		display: none;
+	}
+}
+
+@media (max-width: 448px) {
+	.about__wrapper {
+		padding: 60px 48px 90px !important;
+	}
+
+	.custom-next,
+	.custom-prev {
+		display: none;
+	}
+}
+
+@media (max-width: 354px) {
+	.about__wrapper {
+		padding: 60px 1px 90px !important;
+	}
+
+	.custom-next,
+	.custom-prev {
+		display: none;
+	}
+}
+
+@media (max-width: 1072px) {
+	.swiper-slide {
+		img {
+			width: 320px;
+		}
+	}
+}
+
+@media (max-width: 1008px) {
+	.swiper-slide {
+		img {
+			width: 300px;
+		}
+	}
+}
+
+@media (max-width: 962px) {
+	.swiper-slide {
+		img {
+			width: 350px;
+		}
+	}
+
+	.slider__arrow {
+		width: 13px;
+		height: 13px;
+	}
+}
+
+@media (max-width: 850px) {
+	.swiper-slide {
+		img {
+			width: 300px;
+		}
+	}
+}
+
+@media (max-width: 516px) {
+	.contacts__title {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 334px) {
+	.nav__link {
+		font-size: 14px;
+	}
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url("../img/placeholder.png") no-repeat scroll top right;
+	background-size: contain;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #1a1a1a;
+	margin: 0 auto;
+	color: #fff;
+}
+
+$width: 1110px;
+
+h1 {
+	font-size: 72px;
+	margin: 0;
+}
+
+a {
+	color: #ffff;
+	text-decoration: none;
+}
+@import "header";
+@import "container";
+@import "calculator";
+@import "footer";
