@@ -627,6 +627,10 @@ button {
   align-items: center;
 }
 
+.calculator__title {
+  font-size: 23px;
+}
+
 .calculating__choose-item {
   max-width: 160px;
   background: #262626;
@@ -726,4 +730,6 @@ button {
 
 .footer__description {
   margin-top: 12px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

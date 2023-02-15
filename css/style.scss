@@ -697,7 +697,9 @@ button {
 	display: flex;
 	align-items: center;
 }
-
+.calculator__title{
+	font-size: 23px;
+}
 .calculating__choose-item {
 	max-width: 160px;
 	background: #262626;
