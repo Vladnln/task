@@ -1,5 +1,6 @@
 let gender = intensity = 0;
-formData = document.querySelectorAll('.calculating__choose_big input');
+let weight, height, age, result;
+formData = document.querySelectorAll('.calculating__choose-item');
 document.querySelectorAll('.calculating__choose-item_active').forEach(function (elem) {
     if (elem.parentNode.id === 'gender') {
         gender = elem.id;
@@ -71,14 +72,14 @@ function calculateResult(gender, intensity) {
     });
     if (!weight || !height || !age) {
         result = '____';
-        document.querySelector("#clear").innerHTML = '';
+        document.querySelector("#clear").innerHTML = '&#10060;';
     } else {
         if (gender === 'woman') {
             result = Math.floor(((10 * weight) + (6.25 * height) - (5 * age) - 161) * intensity);
         } else {
             result = Math.floor(((10 * weight) + (6.25 * height) - (5 * age) + 5) * intensity);
         }
-        document.querySelector("#clear").innerHTML = '';
+        document.querySelector("#clear").innerHTML = '&#10060;';
     }
     console.log(weight, height, age, result);
     if (!result) {
