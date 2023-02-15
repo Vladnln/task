@@ -25,7 +25,7 @@
 	font-weight: 700;
 	font-style: normal;
 }
-
+$width: 1110px;
 * {
 	box-sizing: border-box;
 }
@@ -213,7 +213,7 @@ body {
 	color: #fff;
 }
 
-$width: 1110px;
+@import 'header';
 
 h1 {
 	font-size: 72px;
@@ -224,7 +224,7 @@ a {
 	color: #ffff;
 	text-decoration: none;
 }
-@import "header";
-@import "container";
-@import "calculator";
-@import "footer";
+
+@import 'container';
+@import 'calculator';
+@import 'footer';

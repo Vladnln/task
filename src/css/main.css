@@ -160,16 +160,6 @@ body {
   color: #fff;
 }
 
-h1 {
-  font-size: 72px;
-  margin: 0;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
 .header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -201,6 +191,16 @@ nav {
 
 .nav__link_active {
   color: #34c759;
+}
+
+h1 {
+  font-size: 72px;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .container {
