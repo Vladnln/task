@@ -151,6 +151,11 @@ p {
   padding: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 body {
   background: url("../img/placeholder.png") no-repeat scroll top right;
   background-size: contain;
@@ -650,6 +655,12 @@ button {
   cursor: pointer;
 }
 
+.calculating__choose-item_active:hover {
+  background-color: #34c759;
+  color: #252525;
+  cursor: pointer;
+}
+
 .calculating__choose_middle {
   display: flex;
   justify-content: space-evenly;
@@ -730,6 +741,4 @@ button {
 
 .footer__description {
   margin-top: 12px;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
