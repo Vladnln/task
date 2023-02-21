@@ -81,7 +81,6 @@ function calculateResult(gender, intensity) {
         }
         document.querySelector("#clear").innerHTML = '&#10060;';
     }
-    console.log(weight, height, age, result);
     if (!result) {
         result = '____';
         document.querySelector("#clear").innerHTML = '&#10060;';
