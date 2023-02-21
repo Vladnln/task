@@ -655,7 +655,7 @@ button {
   cursor: pointer;
 }
 
-.calculating__choose-item_active:hover {
+.calculating__choose-item_active {
   background-color: #34c759;
   color: #252525;
   cursor: pointer;
@@ -689,6 +689,9 @@ button {
   letter-spacing: 0.2em;
   padding-bottom: 5px;
   color: #d9d9d9;
+}
+.calculating__result span {
+  color: #34c759;
 }
 
 .calculator__divider {
