@@ -74,7 +74,7 @@ function calculateResult(gender, intensity) {
         result = '____';
         document.querySelector("#clear").innerHTML = '&#10060;';
     } else {
-        if (gender === 'woman') {
+        if (gender === 'female') {
             result = Math.floor(447.6 + (9.2 * weight) + (3.1 * height) - (4.3 * age) * intensity);
         } else {
             result = Math.floor(88.36 + (13.4 * weight) + (4.8 * height) - (5.7 * age) * intensity);
@@ -86,7 +86,6 @@ function calculateResult(gender, intensity) {
         document.querySelector("#clear").innerHTML = '&#10060;';
     }
     document.querySelector('.calculating__result span').textContent = result;
-
 };
 
 function startupCondition() {
