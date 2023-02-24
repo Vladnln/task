@@ -1,5 +1,4 @@
-let gender = intensity = 0;
-let weight, height, age, result;
+let weight, height, age, result, gender, intensity;
 formData = document.querySelectorAll('.calculating__choose-item');
 document.querySelectorAll('.calculating__choose-item_active').forEach(function (elem) {
     if (elem.parentNode.id === 'gender') {
