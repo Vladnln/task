@@ -23,6 +23,8 @@
 .calculator__activity {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .calculator__title {
@@ -39,7 +41,7 @@
   font-size: 12px;
   line-height: 40px;
   padding: 0px 25px;
-  margin: 0 15px 0 15px;
+  margin: 10px 10px 0 10px;
 
   &:hover {
     transition: 0.3s ease;
@@ -58,6 +60,7 @@
 .calculating__choose_middle {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .calculator__input {
@@ -101,6 +104,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .calculator__clear-btn {
