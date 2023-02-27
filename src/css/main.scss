@@ -204,9 +204,28 @@ p {
 	padding: 0;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
 	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+	-moz-appearance: number-input;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+html {
+	scrollbar-color: #34c759 #252525;
 }
 
 body {
@@ -218,7 +237,7 @@ body {
 	color: #fff;
 }
 
-@import 'header';
+@import "header";
 
 h1 {
 	font-size: 72px;
@@ -230,6 +249,6 @@ a {
 	text-decoration: none;
 }
 
-@import 'container';
-@import 'calculator';
-@import 'footer';
+@import "container";
+@import "calculator";
+@import "footer";

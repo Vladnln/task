@@ -1,6 +1,12 @@
-let weight, height, age, result, gender, intensity;
-formData = document.querySelectorAll('.calculating__choose-item');
-document.querySelectorAll('.calculating__choose-item_active').forEach(function (elem) {
+const parameters = {
+    gender: 'female',
+    intensity: 'weak',
+}
+let weight, height, age, result;
+let formData = document.querySelectorAll('.calculating__choose-item');
+let activeItem = document.querySelectorAll('.calculating__choose-item_active');
+
+activeItem.forEach(function (elem) {
     if (elem.parentNode.id === 'gender') {
         gender = elem.id;
     } else {
@@ -24,8 +30,7 @@ function getBlockContent(parentSelector, element, action) {
             localStorage.setItem('intensity', intensity);
         }
     }
-
-    elements = document.querySelectorAll(`${parentSelector} ${element}`);
+    const elements = document.querySelectorAll(`${parentSelector} ${element}`);
     elements.forEach(function (elem) {
 
         if (localStorage.getItem('gender')) {
@@ -102,7 +107,7 @@ function startupCondition() {
     calculateResult(gender, intensity);
 };
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     startupCondition();
 });
 
@@ -112,8 +117,7 @@ document.querySelector("#clear").addEventListener('click', function () {
         localStorage.removeItem('height');
         localStorage.removeItem('weight');
         localStorage.removeItem('age');
-        localStorage.removeItem('intensity');
-        localStorage.removeItem('gender');
+        localStorage.removeItem(parameters);
         document.querySelector('#weight').value = localStorage.getItem('weight');
         document.querySelector('#height').value = localStorage.getItem('height');
         document.querySelector('#age').value = localStorage.getItem('age');

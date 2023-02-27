@@ -50,7 +50,10 @@
     cursor: pointer;
   }
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 .calculating__choose-item_active {
   background-color: #34c759;
   color: #252525;
