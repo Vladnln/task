@@ -12,7 +12,6 @@ activeItem.forEach(function (elem) {
     } else {
         intensity = +elem.dataset.ratio;
     };
-
 });
 
 function getBlockContent(parentSelector, element, action) {
@@ -33,10 +32,10 @@ function getBlockContent(parentSelector, element, action) {
     const elements = document.querySelectorAll(`${parentSelector} ${element}`);
     elements.forEach(function (elem) {
 
-        if (localStorage.getItem('gender')) {
+        if (elem.classList.contains('gender')) {
             checkingActiveElement(document.querySelector(`#${localStorage.getItem('gender')}`));
         };
-        if (localStorage.getItem('intensity')) {
+        if (elem.classList.contains('intensity')) {
             checkingActiveElement(document.querySelector(`[data-ratio="${localStorage.getItem('intensity')}"]`));
         };
 
