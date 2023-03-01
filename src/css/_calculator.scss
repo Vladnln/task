@@ -8,7 +8,6 @@
   text-align: center;
 
   &__wrapper {
-    max-width: 800px;
     margin: auto;
     padding: 45px 45px;
   }
@@ -37,11 +36,11 @@
   color: rgba(255, 255, 255, 0.5);
   border: 2px solid #303030;
   border-radius: 30px;
-  font-weight: 900;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 40px;
   padding: 0px 25px;
   margin: 10px 10px 0 10px;
+  text-align: center;
 
   &:hover {
     transition: 0.3s ease;
