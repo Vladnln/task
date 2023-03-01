@@ -1,16 +1,15 @@
-const parameters = {
-    gender: 'female',
-    intensity: 'weak',
-}
-let weight, height, age, result;
+let metrics = {}
 let formData = document.querySelectorAll('.calculating__choose-item');
 let activeItem = document.querySelectorAll('.calculating__choose-item_active');
-
+const saved = localStorage.getItem('calculator')
+if(saved){
+    metrics = JSON.parse(saved)
+}
 activeItem.forEach(function (elem) {
     if (elem.parentNode.id === 'gender') {
-        gender = elem.id;
+        metrics.gender = elem.id;
     } else {
-        intensity = +elem.dataset.ratio;
+        metrics.intensity = +elem.dataset.ratio;
     };
 });
 
@@ -22,26 +21,24 @@ function getBlockContent(parentSelector, element, action) {
         });
         elem.classList.add(`${action}`);
         if (elem.parentNode.id === 'gender') {
-            gender = elem.id;
-            localStorage.setItem('gender', gender);
+            metrics.gender = elem.id;
         } else {
-            intensity = +elem.dataset.ratio;
-            localStorage.setItem('intensity', intensity);
+            metrics.intensity = +elem.dataset.ratio;
         }
     }
     const elements = document.querySelectorAll(`${parentSelector} ${element}`);
     elements.forEach(function (elem) {
 
         if (elem.classList.contains('gender')) {
-            checkingActiveElement(document.querySelector(`#${localStorage.getItem('gender')}`));
+            checkingActiveElement(document.querySelector(`#${metrics.gender}`));
         };
         if (elem.classList.contains('intensity')) {
-            checkingActiveElement(document.querySelector(`[data-ratio="${localStorage.getItem('intensity')}"]`));
+            checkingActiveElement(document.querySelector(`[data-ratio="${metrics.intensity}"]`));
         };
 
         elem.addEventListener('click', function () {
             checkingActiveElement(this);
-            calculateResult(gender, intensity);
+            calculateResult(metrics.gender, metrics.intensity);
         });
     });
 
@@ -49,38 +46,28 @@ function getBlockContent(parentSelector, element, action) {
 
 function calculateResult(gender, intensity) {
     formData.forEach((input) => {
-        if (input.id === 'weight') {
-            weight = +input.value;
-        }
-        if (input.id === 'height') {
-            height = +input.value;
-        }
-        if (input.id === 'age') {
-            age = +input.value;
-        };
         input.addEventListener('change', function () {
             if (input.id === 'weight') {
-                weight = +input.value;
-                localStorage.setItem('weight', weight);
+                metrics.weight = +input.value;
             }
             if (input.id === 'height') {
-                height = +input.value;
-                localStorage.setItem('height', height);
+                metrics.height = +input.value;
             }
             if (input.id === 'age') {
-                age = +input.value;
-                localStorage.setItem('age', age);
+                metrics.age = +input.value;
             };
+            calculateResult(metrics.gender, metrics.intensity)
         });
     });
-    if (!weight || !height || !age) {
+    localStorage.setItem('calculator', JSON.stringify(metrics))
+    if (!metrics.weight || !metrics.height || !metrics.age) {
         result = '____';
         document.querySelector("#clear").innerHTML = '&#10060;';
     } else {
         if (gender === 'female') {
-            result = Math.floor(447.6 + (9.2 * weight) + (3.1 * height) - (4.3 * age) * intensity);
+            result = Math.floor(447.6 + (9.2 * metrics.weight) + (3.1 * metrics.height) - (4.3 * metrics.age) * intensity);
         } else {
-            result = Math.floor(88.36 + (13.4 * weight) + (4.8 * height) - (5.7 * age) * intensity);
+            result = Math.floor(88.36 + (13.4 * metrics.weight) + (4.8 * metrics.height) - (5.7 * metrics.age) * intensity);
         }
         document.querySelector("#clear").innerHTML = '&#10060;';
     }
@@ -92,18 +79,18 @@ function calculateResult(gender, intensity) {
 };
 
 function startupCondition() {
-    if (localStorage.getItem('weight')) {
-        document.querySelector('#weight').value = localStorage.getItem('weight');
+    if (metrics.weight) {
+        document.querySelector('#weight').value = metrics.weight;
     }
-    if (localStorage.getItem('height')) {
-        document.querySelector('#height').value = localStorage.getItem('height');
+    if (metrics.height) {
+        document.querySelector('#height').value = metrics.height;
     }
-    if (localStorage.getItem('age')) {
-        document.querySelector('#age').value = localStorage.getItem('age');
+    if (metrics.age) {
+        document.querySelector('#age').value = metrics.age;
     }
     getBlockContent('#gender', 'div', 'calculating__choose-item_active');
     getBlockContent('.calculating__choose_big', 'div', 'calculating__choose-item_active');
-    calculateResult(gender, intensity);
+    calculateResult(metrics.gender, metrics.intensity);
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -111,15 +98,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.querySelector("#clear").addEventListener('click', function () {
-    answer = confirm('Are you sure you want to clear your results?');
+    let answer = confirm('Are you sure you want to clear your results?');
     if (answer) {
-        localStorage.removeItem('height');
-        localStorage.removeItem('weight');
-        localStorage.removeItem('age');
-        localStorage.removeItem(parameters);
-        document.querySelector('#weight').value = localStorage.getItem('weight');
-        document.querySelector('#height').value = localStorage.getItem('height');
-        document.querySelector('#age').value = localStorage.getItem('age');
+        localStorage.removeItem('calculator')
+        metrics ={}
+        document.querySelector('#weight').value = ''
+        document.querySelector('#height').value = '';
+        document.querySelector('#age').value = '';
         startupCondition();
     };
 
