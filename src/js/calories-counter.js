@@ -20,7 +20,6 @@ activeItem.forEach(function(elem) {
 });
 
 function getBlockContent(parentSelector, element, action) {
-
     function checkingActiveElement(elem) {
         elem.parentNode.querySelectorAll(`${element}`).forEach(function(e) {
             e.classList.remove(`${action}`);
@@ -34,7 +33,6 @@ function getBlockContent(parentSelector, element, action) {
     }
     const elements = document.querySelectorAll(`${parentSelector} ${element}`);
     elements.forEach(function(elem) {
-
         if (elem.classList.contains('gender')) {
             checkingActiveElement(document.classList.contains(`#${metrics.gender}`));
         };
@@ -47,12 +45,11 @@ function getBlockContent(parentSelector, element, action) {
             calculateResult(metrics.gender, metrics.intensity);
         });
     });
-
 };
 
 function calculateResult(gender, intensity) {
     formData.forEach((input) => {
-        input.addEventListener('change', function() {
+        input.addEventListener('change', function(){
             if (input.id === 'weight') {
                 metrics.weight = +input.value;
             }
@@ -75,10 +72,6 @@ function calculateResult(gender, intensity) {
         } else {
             result = Math.floor(88.36 + (13.4 * metrics.weight) + (4.8 * metrics.height) - (5.7 * metrics.age) * intensity);
         }
-        clearElems.innerHTML = '&#10060;';
-    }
-    if (!result) {
-        result = '';
         clearElems.innerHTML = '&#10060;';
     }
     finalResult.textContent = result;
@@ -105,11 +98,10 @@ clearElems.addEventListener('click', function() {
     let answer = confirm('Are you sure you want to clear your results?');
     if (answer) {
         localStorage.removeItem('calculator')
-        metrics ={}
+        metrics = {}
         weight.value = '';
         height.value = '';
         age.value = '';
         startupCondition();
     };
 });
-
