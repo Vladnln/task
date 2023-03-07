@@ -6,6 +6,8 @@ const clearElems = document.querySelector('#clear')
 const weight = document.querySelector('#weight')
 const height = document.querySelector('#height')
 const age = document.querySelector('#age')
+const finalResult = document.querySelector('.calculating__result span')
+
 if(saved){
     metrics = JSON.parse(saved)
 }
@@ -65,7 +67,7 @@ function calculateResult(gender, intensity) {
     });
     localStorage.setItem('calculator', JSON.stringify(metrics))
     if (!metrics.weight || !metrics.height || !metrics.age) {
-        result = '____';
+        result = '';
         clearElems.innerHTML = '&#10060;';
     } else {
         if (gender === 'female') {
@@ -76,10 +78,10 @@ function calculateResult(gender, intensity) {
         clearElems.innerHTML = '&#10060;';
     }
     if (!result) {
-        result = '____';
+        result = '';
         clearElems.innerHTML = '&#10060;';
     }
-    document.querySelector('.calculating__result span').textContent = result;
+    finalResult.textContent = result;
 };
 
 function startupCondition() {
@@ -104,15 +106,10 @@ clearElems.addEventListener('click', function() {
     if (answer) {
         localStorage.removeItem('calculator')
         metrics ={}
-        weight.value = ''
+        weight.value = '';
         height.value = '';
         age.value = '';
         startupCondition();
     };
 });
 
-formData.forEach(elem => {
-    elem.addEventListener('change', function() {
-        calculateResult(gender, intensity);
-    });
-});
