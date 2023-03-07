@@ -36,10 +36,10 @@ function getBlockContent(parentSelector, element, action) {
     elements.forEach(function(elem) {
 
         if (elem.classList.contains('gender')) {
-            checkingActiveElement(document.querySelector(`#${metrics.gender}`));
+            checkingActiveElement(document.classList.contains(`#${metrics.gender}`));
         };
         if (elem.classList.contains('intensity')) {
-            checkingActiveElement(document.querySelector(`[data-ratio="${metrics.intensity}"]`));
+            checkingActiveElement(document.classList.contains(`[data-ratio="${metrics.intensity}"]`));
         };
 
         elem.addEventListener('click', function() {
