@@ -2,16 +2,16 @@ let metrics = {}
 let formData = document.querySelectorAll('.calculating__choose-item');
 let activeItem = document.querySelectorAll('.calculating__choose-item_active');
 const saved = localStorage.getItem('calculator')
-const clearElems = document.querySelector('#clear')
-const weight = document.querySelector('#weight')
-const height = document.querySelector('#height')
-const age = document.querySelector('#age')
+const clearElems = document.getElementById('clear')
+const weight = document.getElementById('weight')
+const height = document.getElementById('height')
+const age = document.getElementById('age')
 const finalResult = document.querySelector('.calculating__result span')
 
-if(saved){
+if (saved) {
     metrics = JSON.parse(saved)
 }
-activeItem.forEach(function(elem) {
+activeItem.forEach(function (elem) {
     if (elem.parentNode.id === 'gender') {
         metrics.gender = elem.id;
     } else {
@@ -21,7 +21,7 @@ activeItem.forEach(function(elem) {
 
 function getBlockContent(parentSelector, element, action) {
     function checkingActiveElement(elem) {
-        elem.parentNode.querySelectorAll(`${element}`).forEach(function(e) {
+        elem.parentNode.querySelectorAll(`${element}`).forEach(function (e) {
             e.classList.remove(`${action}`);
         });
         elem.classList.add(`${action}`);
@@ -32,7 +32,7 @@ function getBlockContent(parentSelector, element, action) {
         }
     }
     const elements = document.querySelectorAll(`${parentSelector} ${element}`);
-    elements.forEach(function(elem) {
+    elements.forEach(function (elem) {
         if (elem.classList.contains('gender')) {
             checkingActiveElement(document.classList.contains(`#${metrics.gender}`));
         };
@@ -40,7 +40,7 @@ function getBlockContent(parentSelector, element, action) {
             checkingActiveElement(document.classList.contains(`[data-ratio="${metrics.intensity}"]`));
         };
 
-        elem.addEventListener('click', function() {
+        elem.addEventListener('click', function () {
             checkingActiveElement(this);
             calculateResult(metrics.gender, metrics.intensity);
         });
@@ -49,7 +49,7 @@ function getBlockContent(parentSelector, element, action) {
 
 function calculateResult(gender, intensity) {
     formData.forEach((input) => {
-        input.addEventListener('change', function(){
+        input.addEventListener('input', function () {
             if (input.id === 'weight') {
                 metrics.weight = +input.value;
             }
@@ -64,8 +64,8 @@ function calculateResult(gender, intensity) {
     });
     localStorage.setItem('calculator', JSON.stringify(metrics))
     if (!metrics.weight || !metrics.height || !metrics.age) {
-        result = '';
-        clearElems.innerHTML = '&#10060;';
+        result = '___';
+        clearElems.style.display = 'none';
     } else {
         if (gender === 'female') {
             result = Math.floor(447.6 + (9.2 * metrics.weight) + (3.1 * metrics.height) - (4.3 * metrics.age) * intensity);
@@ -73,6 +73,7 @@ function calculateResult(gender, intensity) {
             result = Math.floor(88.36 + (13.4 * metrics.weight) + (4.8 * metrics.height) - (5.7 * metrics.age) * intensity);
         }
         clearElems.innerHTML = '&#10060;';
+        clearElems.style.display = 'block';
     }
     finalResult.textContent = result;
 };
@@ -94,7 +95,7 @@ function startupCondition() {
 
 startupCondition();
 
-clearElems.addEventListener('click', function() {
+clearElems.addEventListener('click', function () {
     let answer = confirm('Are you sure you want to clear your results?');
     if (answer) {
         localStorage.removeItem('calculator')
