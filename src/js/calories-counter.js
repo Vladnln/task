@@ -11,7 +11,7 @@ const finalResult = document.querySelector('.calculating__result span')
 if (saved) {
     metrics = JSON.parse(saved)
 }
-activeItem.forEach(function (elem) {
+activeItem.forEach(function(elem) {
     if (elem.parentNode.id === 'gender') {
         metrics.gender = elem.id;
     } else {
@@ -21,7 +21,7 @@ activeItem.forEach(function (elem) {
 
 function getBlockContent(parentSelector, element, action) {
     function checkingActiveElement(elem) {
-        elem.parentNode.querySelectorAll(`${element}`).forEach(function (e) {
+        elem.parentNode.querySelectorAll(`${element}`).forEach(function(e) {
             e.classList.remove(`${action}`);
         });
         elem.classList.add(`${action}`);
@@ -32,7 +32,7 @@ function getBlockContent(parentSelector, element, action) {
         }
     }
     const elements = document.querySelectorAll(`${parentSelector} ${element}`);
-    elements.forEach(function (elem) {
+    elements.forEach(function(elem) {
         if (elem.classList.contains('gender')) {
             checkingActiveElement(document.classList.contains(`#${metrics.gender}`));
         };
@@ -40,7 +40,7 @@ function getBlockContent(parentSelector, element, action) {
             checkingActiveElement(document.classList.contains(`[data-ratio="${metrics.intensity}"]`));
         };
 
-        elem.addEventListener('click', function () {
+        elem.addEventListener('click', function() {
             checkingActiveElement(this);
             calculateResult(metrics.gender, metrics.intensity);
         });
@@ -49,7 +49,7 @@ function getBlockContent(parentSelector, element, action) {
 
 function calculateResult(gender, intensity) {
     formData.forEach((input) => {
-        input.addEventListener('input', function () {
+        input.addEventListener('input', function() {
             if (input.id === 'weight') {
                 metrics.weight = +input.value;
             }
@@ -95,7 +95,7 @@ function startupCondition() {
 
 startupCondition();
 
-clearElems.addEventListener('click', function () {
+clearElems.addEventListener('click', function() {
     let answer = confirm('Are you sure you want to clear your results?');
     if (answer) {
         localStorage.removeItem('calculator')
