@@ -7,7 +7,6 @@ const weight = document.getElementById('weight')
 const height = document.getElementById('height')
 const age = document.getElementById('age')
 const finalResult = document.querySelector('.calculating__result span')
-
 if (saved) {
     metrics = JSON.parse(saved)
 }
@@ -19,12 +18,10 @@ activeItem.forEach(function(elem) {
     };
 });
 
-function getBlockContent(parentSelector, element, action) {
+function getBlockContent(parentSelector, element) {
     function checkingActiveElement(elem) {
         elem.parentNode.querySelectorAll(`${element}`).forEach(function(e) {
-            e.classList.remove(`${action}`);
         });
-        elem.classList.add(`${action}`);
         if (elem.parentNode.id === 'gender') {
             metrics.gender = elem.id;
         } else {
@@ -44,7 +41,6 @@ function getBlockContent(parentSelector, element, action) {
                 age = +this.value;
                 break;
         }
-
         elem.addEventListener('click', function() {
             checkingActiveElement(this);
             calculateResult(metrics.gender, metrics.intensity);
@@ -68,14 +64,14 @@ function calculateResult(gender, intensity) {
         });
     });
     localStorage.setItem('calculator', JSON.stringify(metrics))
-    if (!metrics.weight || !metrics.height || !metrics.age) {
+    if (!metrics.weight || !metrics.height || !metrics.age || !metrics.intensity) {
         result = '___';
         clearElems.style.display = 'none';
     } else {
         if (gender === 'female') {
-            result = Math.floor(447.6 + (9.2 * metrics.weight) + (3.1 * metrics.height) - (4.3 * metrics.age) * intensity);
+            result = Math.floor(447.6 + (9.2 * metrics.weight) + (3.1 * metrics.height) - (4.3 * metrics.age) * metrics.intensity);
         } else {
-            result = Math.floor(88.36 + (13.4 * metrics.weight) + (4.8 * metrics.height) - (5.7 * metrics.age) * intensity);
+            result = Math.floor(88.36 + (13.4 * metrics.weight) + (4.8 * metrics.height) - (5.7 * metrics.age) * metrics.intensity);
         }
         clearElems.innerHTML = '&#10060;';
         clearElems.style.display = 'block';
