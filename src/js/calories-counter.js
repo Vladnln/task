@@ -20,30 +20,17 @@ activeItem.forEach(function(elem) {
 
 function getBlockContent(parentSelector, element) {
     function checkingActiveElement(elem) {
-        elem.parentNode.querySelectorAll(`${element}`).forEach(function(e) {
-        });
         if (elem.parentNode.id === 'gender') {
             metrics.gender = elem.id;
-        } else {
+        } else if(elem.dataset.ratio) {
             metrics.intensity = +elem.dataset.ratio;
         }
+        calculateResult(metrics.gender, metrics.intensity);
     }
     const elements = document.querySelectorAll(`${parentSelector} ${element}`);
     elements.forEach(function(elem) {
-        switch (this.intensity) {
-            case "height":
-                height = +this.value;
-                break;
-            case "weight":
-                weight = +this.value;
-                break;
-            case "age":
-                age = +this.value;
-                break;
-        }
         elem.addEventListener('click', function() {
             checkingActiveElement(this);
-            calculateResult(metrics.gender, metrics.intensity);
         });
     });
 };
