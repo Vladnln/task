@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -277,8 +278,14 @@
 		<div class="calculator__wrapper">
 			<h1 class="title__name calculator__title">Your Gender</h1>
 			<div class="calculator__header" id="gender">
-				<div id="female" class="calculating__choose-item calculating__choose-item_active">Woman</div>
-				<div id="male" class="calculating__choose-item">Man</div>
+				<label id="female">
+					<input type="radio" name="gender" checked>
+					<div class="calculating__choose-item calculating__choose-item_active">Woman</div>
+				</label>
+				<label id="male">
+					<input type="radio" name="gender" id="">
+					<div class="calculating__choose-item">Man</div>
+				</label>
 			</div>
 			<h1 class="title__name calculator__title">Your Constitution</h1>
 			<div class="calculating__choose_middle">
@@ -288,11 +295,22 @@
 			</div>
 			<h1 class="title__name calculator__title">Choose Your Physical Activity</h1>
 			<div class="calculator__activity calculating__choose_big">
-				<div id="low" class="calculating__choose-item" data-ratio="1.2">Low Activity</div>
-				<div id="weak" class="calculating__choose-item calculating__choose-item_active" data-ratio="1.375">Weak
-					Activity</div>
-				<div id="medium" class="calculating__choose-item" data-ratio="1.55">Medium Activity</div>
-				<div id="high" class="calculating__choose-item" data-ratio="1.725">High Activity</div>
+				<label>
+					<input type="radio" name="1">
+					<div id="low" class="calculating__choose-item" data-ratio="1.375">Low Activity</div>
+				</label>
+				<label>
+					<input type="radio" checked name="1">
+					<div id="weak" class="calculating__choose-item calculating__choose-item_active" data-ratio="1.2">Weak Activity</div>
+				</label>
+				<label>
+					<input type="radio" name="1">
+					<div id="medium" class="calculating__choose-item" data-ratio="1.55">Medium Activity</div>
+				</label>
+				<label>
+					<input type="radio" name="1">
+					<div id="high" class="calculating__choose-item" data-ratio="1.725">High Activity</div>
+				</label>
 			</div>
 			<div class="calculator__divider"></div>
 			<div class="calculator__total">

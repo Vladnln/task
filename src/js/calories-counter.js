@@ -33,12 +33,17 @@ function getBlockContent(parentSelector, element, action) {
     }
     const elements = document.querySelectorAll(`${parentSelector} ${element}`);
     elements.forEach(function(elem) {
-        if (elem.classList.contains('gender')) {
-            checkingActiveElement(document.classList.contains(`#${metrics.gender}`));
-        };
-        if (elem.classList.contains('intensity')) {
-            checkingActiveElement(document.classList.contains(`[data-ratio="${metrics.intensity}"]`));
-        };
+        switch (this.intensity) {
+            case "height":
+                height = +this.value;
+                break;
+            case "weight":
+                weight = +this.value;
+                break;
+            case "age":
+                age = +this.value;
+                break;
+        }
 
         elem.addEventListener('click', function() {
             checkingActiveElement(this);
@@ -88,8 +93,8 @@ function startupCondition() {
     if (metrics.age) {
         age.value = metrics.age;
     }
-    getBlockContent('#gender', 'div', 'calculating__choose-item_active');
-    getBlockContent('.calculating__choose_big', 'div', 'calculating__choose-item_active');
+    getBlockContent('#gender', 'label', 'calculating__choose-item_active');
+    getBlockContent('label', 'div', 'calculating__choose-item_active');
     calculateResult(metrics.gender, metrics.intensity);
 };
 
