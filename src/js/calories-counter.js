@@ -93,8 +93,8 @@ function startupCondition() {
     if (metrics.age) {
         age.value = metrics.age;
     }
-    getBlockContent('#gender', 'label', 'calculating__choose-item_active');
-    getBlockContent('label', 'div', 'calculating__choose-item_active');
+    getBlockContent('#gender', 'label');
+    getBlockContent('label', 'div');
     calculateResult(metrics.gender, metrics.intensity);
 };
 
