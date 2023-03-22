@@ -2,6 +2,7 @@ let metrics = {}
 let formData = document.querySelectorAll('.calculating__choose-item');
 let activeItem = document.querySelectorAll('.calculating__choose-item_active');
 const saved = localStorage.getItem('calculator')
+const savedRadio = localStorage.getItem('radio')
 const clearElems = document.getElementById('clear')
 const weight = document.getElementById('weight')
 const height = document.getElementById('height')
@@ -10,7 +11,7 @@ const finalResult = document.querySelector('.calculating__result span')
 if (saved) {
     metrics = JSON.parse(saved)
 }
-activeItem.forEach(function(elem) {
+activeItem.forEach(function (elem) {
     if (elem.parentNode.id === 'gender') {
         metrics.gender = elem.id;
     } else {
@@ -22,14 +23,14 @@ function getBlockContent(parentSelector, element) {
     function checkingActiveElement(elem) {
         if (elem.parentNode.id === 'gender') {
             metrics.gender = elem.id;
-        } else if(elem.dataset.ratio) {
+        } else if (elem.dataset.ratio) {
             metrics.intensity = +elem.dataset.ratio;
         }
         calculateResult(metrics.gender, metrics.intensity);
     }
     const elements = document.querySelectorAll(`${parentSelector} ${element}`);
-    elements.forEach(function(elem) {
-        elem.addEventListener('click', function() {
+    elements.forEach(function (elem) {
+        elem.addEventListener('click', function () {
             checkingActiveElement(this);
         });
     });
@@ -37,7 +38,7 @@ function getBlockContent(parentSelector, element) {
 
 function calculateResult(gender, intensity) {
     formData.forEach((input) => {
-        input.addEventListener('input', function() {
+        input.addEventListener('input', function () {
             if (input.id === 'weight') {
                 metrics.weight = +input.value;
             }
@@ -83,7 +84,7 @@ function startupCondition() {
 
 startupCondition();
 
-clearElems.addEventListener('click', function() {
+clearElems.addEventListener('click', function () {
     let answer = confirm('Are you sure you want to clear your results?');
     if (answer) {
         localStorage.removeItem('calculator')
@@ -94,3 +95,6 @@ clearElems.addEventListener('click', function() {
         startupCondition();
     };
 });
+
+
+
