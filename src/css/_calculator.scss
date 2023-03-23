@@ -15,11 +15,12 @@
 
 .calculator__header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.calculator__header:checked+div {
+.calculator__header:checked + div {
   transition: 0.3s ease;
   cursor: pointer;
   background-color: #34c759;
@@ -57,12 +58,11 @@ label {
 }
 
 label {
-  input:checked+div {
+  input:checked + div {
     transition: 0.3s ease;
     cursor: pointer;
     background-color: #34c759;
     color: #252525;
-
   }
 }
 
