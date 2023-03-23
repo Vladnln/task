@@ -11,7 +11,7 @@ if (saved) {
 	metrics = JSON.parse(saved);
 	for (let k in metrics) {
 		if (["intensity", "gender"].indexOf(k) > -1) {
-			document.querySelector(`[value="${metrics[k]}"]`).checked = true; // <input checked>
+			document.querySelector(`[value="${metrics[k]}"]`).checked = true;
 			continue;
 		}
 		document.getElementById(k).value = metrics[k];
