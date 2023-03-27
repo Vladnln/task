@@ -872,3 +872,12 @@ input::-webkit-inner-spin-button {
 .cart__open:hover {
   cursor: pointer;
 }
+
+.cart__list.cart__list_empty {
+  justify-content: center;
+  align-items: center;
+}
+
+.cart__list_empty {
+  display: none;
+}
