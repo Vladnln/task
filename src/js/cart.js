@@ -7,10 +7,19 @@ const cartOrderBtn = document.querySelector(".cart__order");
 const cartCleanBtn = document.querySelector(".cart__clean");
 const cartOpen = document.querySelector(".cart__open");
 
-document.addEventListener("click", function () {
-	cartOpen.style.visibility = "hidden";
-	cartHidden.classList.toggle("cart__hidden");
-	cartOpen.style.visibility = "visible";
-});
+function openCartMenu() {
+	cartOpen.addEventListener("click", function () {
+		cartOpen.style.visibility = "hidden";
+		cartHidden.classList.toggle("cart__hidden");
+	});
+}
 
-cartClose.addEventListener("click", function () {});
+function closeCartMenu() {
+	cartClose.addEventListener("click", function () {
+		cartContainer.classList.add("cart__hidden");
+		cartOpen.style.visibility = "visible";
+	});
+}
+
+openCartMenu();
+closeCartMenu();
