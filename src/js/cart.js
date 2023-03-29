@@ -8,17 +8,17 @@ const cartCleanBtn = document.querySelector(".cart__clean");
 const cartOpen = document.querySelector(".cart__open");
 
 function openCartMenu() {
-	cartOpen.addEventListener("click", function () {
-		cartOpen.style.visibility = "hidden";
-		cartHidden.classList.toggle("cart__hidden");
-	});
+    cartOpen.addEventListener("click", function () {
+        cartOpen.style.visibility = "hidden";
+        cartHidden.classList.toggle("cart__hidden");
+    });
 }
 
 function closeCartMenu() {
-	cartClose.addEventListener("click", function () {
-		cartContainer.classList.add("cart__hidden");
-		cartOpen.style.visibility = "visible";
-	});
+    cartClose.addEventListener("click", function () {
+        cartContainer.classList.add("cart__hidden");
+        cartOpen.style.visibility = "visible";
+    });
 }
 
 openCartMenu();
