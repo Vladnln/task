@@ -906,6 +906,7 @@ input::-webkit-inner-spin-button {
 .cart__item {
   padding-top: 50px;
   display: flex;
+  gap: 11px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
@@ -934,6 +935,7 @@ input::-webkit-inner-spin-button {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .cart__button_minus {
@@ -944,10 +946,12 @@ input::-webkit-inner-spin-button {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .cart__item_couner-txt {
   padding: 10px;
+  font-weight: 600;
 }
 
 .cart__button_plus:hover {
@@ -960,4 +964,19 @@ input::-webkit-inner-spin-button {
   background-color: #34c759;
   color: #252525;
   transition: 0.3s;
+}
+
+.cart__item_price {
+  display: flex;
+}
+
+.cart__float-btn {
+  position: fixed;
+  background-color: #34c759;
+  color: #252525;
+  padding: 3px 7px;
+  font-size: 13px;
+  right: 70px;
+  bottom: 109px;
+  border-radius: 50%;
 }
