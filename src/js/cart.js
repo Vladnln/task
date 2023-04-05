@@ -21,7 +21,11 @@ function closeCartMenu() {
 	});
 }
 
-function updateCart() {}
+function updateCart() {
+	if (event.target.hasAttribute("data-cart")) {
+		floatingCartCounter.innerText = ++floatingCartCounter.innerText;
+	}
+}
 
 openCartMenu();
 closeCartMenu();
