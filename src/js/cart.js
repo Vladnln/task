@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 	const cartContainer = document.querySelector(".cart");
-	const cartHidden = document.querySelector(".cart__hidden");
-	const body = document.querySelector("body");
 	const cartList = document.querySelector(".cart__list");
 	const dishesList = document.querySelector(".dishes__list-item");
 	const cartPlaceholder = document.querySelector(".cart__placeholder");
@@ -9,11 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	const cartOrderBtn = document.querySelector(".dishes__order-button");
 	const cartCleanBtn = document.querySelector(".cart__clean");
 	const cartOpen = document.querySelector(".floating-btn");
-
-	function handlePopupHide() {
-		cartContainer.classList.toggle("cart__hidden");
-		cartOpen.classList.toggle.style.visibility = "hidden";
-	}
 
 	function handleCounter(event) {
 		switch (event.target.dataset.action) {
@@ -146,7 +139,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	cartOpen.addEventListener("click", handleCart);
 	cartOrderBtn.addEventListener("click", () => {
 		handleCart();
-		renderCartItem();
 	});
 	cartCleanBtn.addEventListener("click", cleanCart);
 });
