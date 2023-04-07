@@ -410,3 +410,15 @@ button {
   font-size: 26px;
   color: #4d4d4d;
 }
+
+.dishes__price {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 6px 0px;
+  font-size: 17px;
+  font-weight: 600;
+  background: #34c759;
+  color: #d9d9d9;
+  padding: 7px;
+}

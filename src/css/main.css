@@ -626,6 +626,18 @@ button {
   color: #4d4d4d;
 }
 
+.dishes__price {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 6px 0px;
+  font-size: 17px;
+  font-weight: 600;
+  background: #34c759;
+  color: #d9d9d9;
+  padding: 7px;
+}
+
 .calculator {
   max-width: 1110px;
   margin: 60px auto;
@@ -803,12 +815,16 @@ input::-webkit-inner-spin-button {
   box-shadow: 0px 4px 9px rgb(0, 0, 0);
 }
 
-.cart__hidden {
+.floating-btn_hidden {
   visibility: hidden;
 }
 
 .cart__header {
   position: relative;
+}
+
+.cart__hidden {
+  visibility: hidden;
 }
 
 .cart__close {
@@ -882,15 +898,12 @@ input::-webkit-inner-spin-button {
   transition: 0.3s;
 }
 
-.cart__open {
+.floating-btn {
   width: 70px;
   height: 70px;
   position: fixed;
   right: 60px;
   bottom: 60px;
-}
-
-.cart__open:hover {
   cursor: pointer;
 }
 
@@ -919,6 +932,10 @@ input::-webkit-inner-spin-button {
 
 .cart__item_title {
   width: 40px;
+}
+
+.cart__number {
+  font-size: 13px;
 }
 
 .cart__item_counter {
@@ -970,7 +987,7 @@ input::-webkit-inner-spin-button {
   display: flex;
 }
 
-.cart__float-btn {
+.floating-btn__count {
   position: fixed;
   background-color: #34c759;
   color: #252525;
