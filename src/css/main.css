@@ -919,7 +919,7 @@ input::-webkit-inner-spin-button {
 .cart__item {
   padding-top: 50px;
   display: flex;
-  gap: 11px;
+  gap: 16px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
@@ -932,6 +932,7 @@ input::-webkit-inner-spin-button {
 
 .cart__item_title {
   width: 40px;
+  font-size: 15px;
 }
 
 .cart__number {
@@ -941,10 +942,9 @@ input::-webkit-inner-spin-button {
 .cart__item_counter {
   display: flex;
   align-items: center;
-  padding-left: 15px;
 }
 
-.cart__button_plus {
+.cart__button {
   padding: 10px 14px;
   border: 2px solid #303030;
   background: #262626;
@@ -955,15 +955,10 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
-.cart__button_minus {
-  padding: 10px 14px;
-  border: 2px solid #303030;
-  background: #262626;
-  font-size: 14px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.5);
-  border-radius: 50px;
-  cursor: pointer;
+.cart__button:hover {
+  background-color: #34c759;
+  color: #252525;
+  transition: 0.3s;
 }
 
 .cart__item_couner-txt {
@@ -971,19 +966,8 @@ input::-webkit-inner-spin-button {
   font-weight: 600;
 }
 
-.cart__button_plus:hover {
-  background-color: #34c759;
-  color: #252525;
-  transition: 0.3s;
-}
-
-.cart__button_minus:hover {
-  background-color: #34c759;
-  color: #252525;
-  transition: 0.3s;
-}
-
 .cart__item_price {
+  padding-left: 11px;
   display: flex;
 }
 
